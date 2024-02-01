@@ -11,8 +11,7 @@
 ## Enunciado (Contexto)
 Una entidad financiera nos pide informatizar su banco para ser más eficiente ante la competencia. El responsable del departamento de informática se reune con nosotros y obtenemos la siguiente información:
 
-El banco trabaja principalmente con: clientes, cuentas bancarias, transacciones y productos bancarios. Además, se debe tener en cuenta los empleados del propio banco.
-
+- El banco trabaja principalmente con: clientes, cuentas bancarias, transacciones y productos bancarios. Además, se debe tener en cuenta los empleados del propio banco.
 - De los clientes (customer) se trabaja con la siguiente información: dni, nombre, apellidos, dirección, población y código postal.
 - Las cuentas bancarias (bank account) contiene: número cuenta, titular de la cuenta (cliente), transacciones, productos contratados y saldo.
 - Las transacciones son los movimientos de entradas (ingresos) y salidas (pagos) de una cuenta bancaria. De los movimientos (movements) se almacena un código único por cada movimiento, descripción del movimiento e importe del movimiento. Si el importe es positivo se entiende que es un ingreso, sino, un pago.
@@ -60,5 +59,4 @@ Implementa en Java las siguientes funcionalidades:
 - Crear una cuenta bancaria. La cuenta irá asociada a un cliente. Deberá tener al menos dos transacciones y un producto contratado (hipoteca).
 - Listar un cliente con su cuenta bancaria con las transacciones de esa cuenta y los productos contratados.
 
-
-  Nota: En algunos de los casos puede darse necesarios crear otros casos de uso como obtener, eliminar, modificar, etc.
+Nota: En algunos de los casos puede darse necesarios crear otros casos de uso como obtener, eliminar, modificar, etc.
