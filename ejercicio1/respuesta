@@ -1,24 +1,24 @@
-1. **Análisis de requisitos:** Esta es la fase en la que los desarrolladores, junto con los clientes, estudian y
+1. Análisis de requisitos: Esta es la fase en la que los desarrolladores, junto con los clientes, estudian y
    documentan
    los requisitos del sistema. En el contexto de este examen, esta fase ya se ha realizado y los requisitos se han
    proporcionado en el enunciado del problema.
 
 
-2. **Diseño:** En esta fase, se toman los requisitos documentados y se diseñan soluciones para cumplir con ellos. Esto
+2. Diseño: En esta fase, se toman los requisitos documentados y se diseñan soluciones para cumplir con ellos. Esto
    podría implicar la creación de diagramas de clases y de casos de uso, como se solicita en los ejercicios 2 y 3.
 
 
-3. **Implementación:** Durante la fase de implementación, los diseños se traducen en código. Los desarrolladores
+3. Implementación: Durante la fase de implementación, los diseños se traducen en código. Los desarrolladores
    crearían
    las clases y métodos necesarios en Java, como se solicita en el ejercicio 5.
 
 
-4. **Pruebas:** Una vez que el código ha sido escrito, se prueba para asegurar que cumple con los requisitos originales
+4. Pruebas: Una vez que el código ha sido escrito, se prueba para asegurar que cumple con los requisitos originales
    y
    que funciona como se esperaba.
 
 
-5. **Mantenimiento:** Después de que el software ha sido liberado, entra en la fase de mantenimiento. Durante esta fase,
+5. Mantenimiento: Después de que el software ha sido liberado, entra en la fase de mantenimiento. Durante esta fase,
    el
    software se actualizará y se corregirán los errores según sea necesario.
 

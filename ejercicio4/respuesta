@@ -1,0 +1,14 @@
+Los principios SOLID son un conjunto de cinco principios de diseño orientado a objetos y programación que fueron promovidos por Robert C. Martin. Estos principios hacen que un sistema sea fácil de mantener, comprender y ampliar a lo largo del tiempo. Los principios SOLID son los siguientes:
+
+Principio de responsabilidad única (Single Responsibility Principle, SRP): Una clase debe tener solo una razón para cambiar. Esto significa que una clase debe tener solo una tarea o responsabilidad.
+Principio abierto/cerrado (Open/Closed Principle, OCP): Las entidades de software (clases, módulos, funciones, etc.) deben estar abiertas para su extensión, pero cerradas para su modificación.
+Principio de sustitución de Liskov (Liskov Substitution Principle, LSP): Las subclases deben ser sustituibles por sus clases base. En otras palabras, los métodos que usan punteros a clases base deben poder usar objetos de una subclase sin saberlo.
+Principio de segregación de la interfaz (Interface Segregation Principle, ISP): Los clientes no deben verse obligados a depender de interfaces que no utilizan. Esto significa que una clase no debe implementar una interfaz si no va a utilizar todos los métodos de la interfaz.
+Principio de inversión de dependencias (Dependency Inversion Principle, DIP): Depende de abstracciones, no de concreciones. Esto significa que las clases de alto nivel no deben depender de las clases de bajo nivel. Ambas deben depender de abstracciones.
+En el proyecto del banco, estos principios se pueden aplicar de la siguiente manera:
+
+SRP: Podemos tener diferentes clases para manejar diferentes entidades como Cliente, CuentaBancaria, Transaccion, ProductoBancario, etc. Cada una de estas clases tiene su propia responsabilidad.
+OCP: Podemos tener una clase base ProductoBancario y diferentes clases hijas como Hipoteca, PlazoFijo, Tarjeta, etc. Si en el futuro se necesita añadir un nuevo producto bancario, simplemente creamos una nueva clase que herede de ProductoBancario.
+LSP: Si tenemos una función que opera en un ProductoBancario, debería ser capaz de operar en cualquier objeto que sea una instancia de ProductoBancario o de cualquier subclase de ProductoBancario.
+ISP: Si tenemos una interfaz OperacionesBancarias que tiene métodos para todas las operaciones bancarias, una clase Cliente puede no necesitar todos los métodos. En este caso, es mejor dividir OperacionesBancarias en varias interfaces más pequeñas.
+DIP: En lugar de hacer que Cliente dependa directamente de CuentaBancaria, podemos hacer que Cliente dependa de una interfaz ICuentaBancaria. De esta manera, si cambiamos la implementación de CuentaBancaria, no necesitamos cambiar Cliente.
