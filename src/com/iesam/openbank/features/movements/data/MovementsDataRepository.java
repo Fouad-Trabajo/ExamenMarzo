@@ -1,4 +1,6 @@
 package com.iesam.openbank.features.movements.data;
 
-public class MovementsDataRepository {
+import com.iesam.openbank.features.movements.domain.MovementsRepository;
+
+public class MovementsDataRepository implements MovementsRepository {
 }

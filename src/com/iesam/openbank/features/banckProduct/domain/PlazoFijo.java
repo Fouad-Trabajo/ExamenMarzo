@@ -1,6 +1,8 @@
 package com.iesam.openbank.features.banckProduct.domain;
 
 public class PlazoFijo extends BanckProduct{
+
+    //Esta clase no la pide el ejercicio
     private String duracionMeses;
     private String interes;
 

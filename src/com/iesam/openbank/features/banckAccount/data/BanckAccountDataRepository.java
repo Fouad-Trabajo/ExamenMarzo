@@ -1,4 +1,6 @@
 package com.iesam.openbank.features.banckAccount.data;
 
-public class BanckAccountDataRepository {
+import com.iesam.openbank.features.banckAccount.domain.BanckAccountRepository;
+
+public class BanckAccountDataRepository implements BanckAccountRepository {
 }

@@ -1,19 +1,24 @@
 package com.iesam.openbank.features.banckAccount.domain;
 
+import com.iesam.openbank.features.banckProduct.domain.BanckProduct;
 import com.iesam.openbank.features.customer.domain.Customer;
 import com.iesam.openbank.features.movements.domain.Movements;
+
+import java.util.List;
 
 public class BankAccount {
     private String nombreCuenta;
     private String saldo;
-    Customer titularCuenta;
-    Movements transacciones;
+    private Customer titularCuenta;
+    private List<Movements> transacciones;
+    private List<BanckProduct> productosBancarios;
 
-    public BankAccount(String nombreCuenta, String saldo, Customer titularCuenta, Movements transacciones) {
+    public BankAccount(String nombreCuenta, String saldo, Customer titularCuenta, List<Movements> transacciones, List<BanckProduct> productosBancarios) {
         this.nombreCuenta = nombreCuenta;
         this.saldo = saldo;
         this.titularCuenta = titularCuenta;
         this.transacciones = transacciones;
+        this.productosBancarios = productosBancarios;
     }
 
     public String getNombreCuenta() {
@@ -40,12 +45,20 @@ public class BankAccount {
         this.titularCuenta = titularCuenta;
     }
 
-    public Movements getTransacciones() {
+    public List<Movements> getTransacciones() {
         return transacciones;
     }
 
-    public void setTransacciones(Movements transacciones) {
+    public void setTransacciones(List<Movements> transacciones) {
         this.transacciones = transacciones;
+    }
+
+    public List<BanckProduct> getProductosBancarios() {
+        return productosBancarios;
+    }
+
+    public void setProductosBancarios(List<BanckProduct> productosBancarios) {
+        this.productosBancarios = productosBancarios;
     }
 
     @Override
@@ -55,6 +68,7 @@ public class BankAccount {
                 ", saldo='" + saldo + '\'' +
                 ", titularCuenta=" + titularCuenta +
                 ", transacciones=" + transacciones +
+                ", productosBancarios=" + productosBancarios +
                 '}';
     }
 }

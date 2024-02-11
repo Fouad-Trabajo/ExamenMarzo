@@ -2,6 +2,7 @@ package com.iesam.openbank.features.banckProduct.domain;
 
 public class Tarjeta extends BanckProduct{
 
+    //Esta clase no la pide el ejercicio
     private String fechaCaducidad;
     private String numeroTarjeta;
 
