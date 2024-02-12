@@ -2,6 +2,10 @@ package com.iesam.openbank.features.customer.domain;
 
 public interface CustomerRepository {
 
-    //GetCustomerUseCase
-    public Customer obtainCustomer(String customerDni);
+
+    Customer obtainCustomer(String customerDni); //GetCustomerUseCase
+
+    void saveCustomer(Customer customer); //SaveUseCase
 }
+
+

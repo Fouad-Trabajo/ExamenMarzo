@@ -11,7 +11,7 @@ public class GetCustomerUseCase {
     }
 
     //Método ejecutar
-    public Customer execute(String customerDni){
-        return this.customerRepository.obtainCustomer(customerDni);
+    public Customer execute(String customer){
+         return this.customerRepository.obtainCustomer(customer);
     }
 }

@@ -60,5 +60,4 @@ Implementa en Java las siguientes funcionalidades:
 - Crear una cuenta bancaria. La cuenta irá asociada a un cliente. Deberá tener al menos dos transacciones y un producto contratado (hipoteca).
 - Listar un cliente con su cuenta bancaria con las transacciones de esa cuenta y los productos contratados.
 
-
-  Nota: En algunos de los casos puede darse necesarios crear otros casos de uso como obtener, eliminar, modificar, etc.
+Nota: En algunos de los casos puede darse necesarios crear otros casos de uso como obtener, eliminar, modificar, etc.
